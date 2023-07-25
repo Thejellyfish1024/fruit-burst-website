@@ -18,13 +18,61 @@
             }
         }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <style>
-        
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
     </style>
 </head>
 
-<body>
-
+<body class="poppins">
+    <header class="container mx-auto  lg:text-white">
+        <!-- nav bar -->
+        <div class="flex justify-between lg:bg-[#F85559] lg:rounded-full my-5 lg:my-12 px-5 lg:px-10 py-7">
+            <div class=" hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="images/logo.png" alt="">
+                <h4 class="text-4xl font-bold">Fruit Burst</h4>
+            </div>
+            <div class=" ">
+                <div class="dropdown ">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hidden lg:contents">
+                <div class="form-control">
+                    <div class="input-group input rounded-full py-2 ">
+                      <input type="text" placeholder="Search here" class="text-black" />
+                      <button class="text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                      </button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
